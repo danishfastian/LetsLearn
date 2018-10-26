@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.learning.course.letslearn.MainMenu"
+    android:orientation="vertical"
+    android:layout_weight="100"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ma_lblLetsLearn"
+            android:textSize="26sp"
+            android:id="@+id/lblLetsLearnerText"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ma_lblAlphabets"
+            android:textSize="26sp"
+            android:id="@+id/lblAlphabets"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lblLetsLearnerText"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ma_lblNumbers"
+            android:textSize="26sp"
+            android:id="@+id/lblNumbers"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lblLetsLearnerText"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imgHeader"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_centerInParent="true"  >
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:onClick="onSelectOption"
+                android:id="@+id/btnButton1" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:onClick="onSelectOption"
+                android:id="@+id/btnButton2" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:onClick="onSelectOption"
+                android:id="@+id/btnButton3" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:onClick="onSelectOption"
+                android:id="@+id/btnButton4" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:onClick="onSelectOption"
+                android:id="@+id/btnButton5" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:onClick="onSelectOption"
+                android:id="@+id/btnButton6" />
+        </GridLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ma_btnStart"
+                android:id="@+id/btnStart"
+                android:onClick="onStart"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ma_btnReplaySound"
+                android:id="@+id/btnReplaySound"
+                android:onClick="onReplay"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ma_btnQuit"
+                android:id="@+id/btnQuit"
+                android:layout_toRightOf="@id/btnReplaySound"
+                android:onClick="onQuit"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0 out of 0 attempts"
+        android:id="@+id/txtScore"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best: 0 out of 0 attempts"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtBest" />
+    <!-- to have some extra space at the end to cover scroll bar in portrait view -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+</LinearLayout>
+</ScrollView>

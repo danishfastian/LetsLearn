@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lets Learn</string>
+    <string name="app_name_post"> for Kids</string>
+    <string name="mm_btnLearnAlphabets">Learn Alphabets</string>
+    <string name="mm_btnLearnNumbers">Learn Numbers</string>
+    <string name="mm_btnExit">Exit</string>
+    <string name="ma_lblLetsLearn">Lets Learn</string>
+    <string name="ma_lblAlphabets">Alphabets</string>
+    <string name="ma_lblNumbers">Numbers</string>
+    <string name="ma_btnStart">Start</string>
+    <string name="ma_btnQuit">Quit</string>
+    <string name="ma_btnReplaySound">Replay Sound </string>
+</resources>
